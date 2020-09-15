@@ -62,30 +62,32 @@
     }
 
     .logo-img {
-        float: left;
         position: relative;
         padding: 20px 30px 20px 100px;
     }
 
     #logo {
         animation-name: logo;
-        animation-duration: 3s;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-delay: 1s;
     }
 
     @keyframes logo {
 
-        50% {
-            width: 180px;
-            height: 60px;
-            transform: rotate(180deg);
+        25% {
+            transform: translate(50px);
         }
 
+        50% {
+            transform: translate(-50px);
+        }
+        75% {
+            transform: translate(50px);
+
+        }
         100% {
-            width: 300px;
-            height: 100px;
-            transform: rotate(360deg);
+            transform: translate(-50px);
         }
     }
     body{
@@ -93,6 +95,7 @@
     }
     
     a { color:#ff6600; }
+    
     .link
     {
         color: #ff0077;
@@ -104,10 +107,10 @@
 <body>
 
     <div class="topnav">
-        <img id="logo" src="f logo.jpg" target=_blank width="300" height="100" align=center class="logo-img">
+        <img id="logo" src="f logo.jpg" width="300" height="100" align=center class="logo-img">
         <a class="active"href="episodes.html">Episodes and Seasons</a>
-        <a href="E and p.html" target=_blank>Characters</a>
-        <a href="Assignmnet.html" target=_blank>More About Mr. Bean</a>
+        <a href="E and p.html">Characters</a>
+        <a href="Assignmnet.html"> More About Mr. Bean</a>
         <a href="Index.html">Home</a>
     </div>
 
@@ -135,5 +138,22 @@
                 
             </div>
             <center><a style="font-size: 30px;" class= "link" href="https://www.youtube.com/user/MrBean/featured"> Click here for more videos and stuff</a></center>
+            <h3 style="padding-left: 50px">Please fill the form to tell your reviews-:</h3>
+
+            <form style="padding-left: 100px;">             
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <Label for="email">E-mail: </Label>
+                <input type="text" id="email" name="email" required> <br><br>
+                <h5>You liked or not:</h5>
+                <input type="radio" id="like" name = "like">
+                <label for= "like" > Like </label><br>
+                <input type="radio" id="dislike" name = "like">
+                <label for= "dislike" > Dislike </label><br>
+                <input type="radio" id="nvgnvb" name = "like">
+                <label for= "nvgnvb" > Not very good, not very bad </label><br>
+                <button type="button" style="background-color: darkmagenta; margin-left: 130px; font-size: 25px; color: yellow">Submit</button>
+                <button type="reset" style="background-color: #f0ec21; margin-left: 50px; color: darkmagenta"><b>Reset</b></button><br><br>
+              </form>
 </body>
 </html>

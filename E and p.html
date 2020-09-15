@@ -60,36 +60,39 @@
         }
     
         #logo {
-            animation-name: logo;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-delay: 1s;
+        animation-name: logo;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes logo {
+
+        25% {
+            transform: translate(50px);
         }
-    
-        @keyframes logo {
-    
-            50% {
-                width: 180px;
-                height: 60px;
-                transform: rotate(180deg);
-            }
-    
-            100% {
-                width: 300px;
-                height: 100px;
-                transform: rotate(360deg);
-            }
+
+        50% {
+            transform: translate(-50px);
         }
+        75% {
+            transform: translate(50px);
+
+        }
+        100% {
+            transform: translate(-50px);
+        }
+    }
 
     </style>
     
     <body>
     
         <div class="topnav">
-            <img id="logo" src="f logo.jpg" target=_blank width="300" height="100" align=center class="logo-img">
+            <img id="logo" src="f logo.jpg"  width="300" height="100" align=center class="logo-img">
             <a href="episodes.html">Episodes and Seasons</a>
-            <a  class="active" href="E and p.html" target=_blank>Characters</a>
-            <a href="Assignmnet.html" target=_blank>More About Mr. Bean</a>
+            <a  class="active" href="E and p.html">Characters</a>
+            <a href="Assignmnet.html">More About Mr. Bean</a>
             <a href="Index.html">Home</a>
         </div>
         <style>
